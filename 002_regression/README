@@ -1,0 +1,42 @@
+#ubuntu18安装python3环境
+## ubuntu18 安装python3.6环境
+
+```
+sudo apt-get update
+sudo apt-get install python3.6
+sudo update-alternatives --config python
+python --version
+sudo apt-get install python3-pip
+pip3 install scikit-learn
+pip3 install matplotlib
+sudo apt-get install python3-tk
+```
+
+## 卸载python3.6引发桌面消失
+
+系统Ubuntu 16.04
+卸载python3.6：sudo apt-get remove python3.6
+
+```
+sudo apt-get remove python3
+```
+
+卸载过程一路Yes 最后卸载掉了桌面相关的依赖，导致重启后桌面除了壁纸以外无内容显示
+
+修复：
+ctrl+alt+F1进入console
+
+```
+sudo apt-get install ubuntu-minimal ubuntu-standard ubuntu-desktop
+sudo reboot
+```
+
+
+
+## mvware共享复制粘贴板
+
+```
+sudo apt-get install open-vm-tools*
+sudo reboot
+```
+
