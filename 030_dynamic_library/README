@@ -1,6 +1,0 @@
-$gcc hello.c  -fPIC -shared -o libhello.so
-$gcc main.c -L. -lhello
-$export LD_LIBRARY_PATH=.
-$./a.out
-hello!!
-
